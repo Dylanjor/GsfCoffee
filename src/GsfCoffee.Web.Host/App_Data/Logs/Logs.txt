@@ -1,0 +1,117 @@
+DEBUG 2020-04-07 08:51:22,308 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-07 08:51:22,732 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-07 08:51:22,794 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,802 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,805 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,808 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,809 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,810 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,811 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,813 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,814 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,815 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,816 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,817 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,818 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,819 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,820 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:22,830 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-07 08:51:23,159 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:51:23,159 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:51:23,159 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:51:23,160 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:51:25,102 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:51:29,512 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-07 08:51:29,804 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-07 08:51:30,010 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-07 08:51:30,105 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-07 08:51:30,272 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-07 08:51:31,267 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-07 08:51:31,929 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-07 08:51:32,150 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-07 08:51:32,150 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-07 08:51:32,172 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-07 08:51:32,174 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-07 08:51:32,175 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-07 08:51:32,176 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-07 08:51:32,176 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-07 08:51:32,177 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-07 08:51:32,177 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-07 08:53:07,394 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-07 08:53:07,896 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-07 08:53:07,958 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,966 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,968 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,969 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,970 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,971 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,972 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,974 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,975 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,976 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,978 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:07,990 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-07 08:53:08,404 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:53:08,405 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:53:08,406 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:53:08,406 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:53:10,339 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:53:18,641 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-07 08:53:19,044 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-07 08:53:19,327 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-07 08:53:19,507 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-07 08:53:19,659 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-07 08:53:23,158 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-07 08:53:23,950 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-07 08:53:24,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-07 08:53:24,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-07 08:53:24,211 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-07 08:53:24,213 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-07 08:53:24,215 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-07 08:53:24,218 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-07 08:53:24,218 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-07 08:53:24,219 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-07 08:53:24,220 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
+DEBUG 2020-04-07 08:58:19,309 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-07 08:58:19,642 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-07 08:58:19,697 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,704 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,706 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,707 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,709 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,710 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,717 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,718 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,719 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:19,730 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-07 08:58:20,029 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:58:20,029 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:58:20,029 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:58:20,030 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-07 08:58:21,635 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-07 08:58:26,351 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-07 08:58:26,733 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-07 08:58:27,002 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-07 08:58:27,091 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-07 08:58:27,247 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-07 08:58:28,633 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-07 08:58:29,409 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-07 08:58:29,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-07 08:58:29,647 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-07 08:58:29,669 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-07 08:58:29,672 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-07 08:58:29,673 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-07 08:58:29,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-07 08:58:29,674 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-07 08:58:29,675 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-07 08:58:29,675 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
