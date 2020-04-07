@@ -7,7 +7,7 @@ using System.Text;
 namespace GsfCoffee.CoffeeUser
 {
     [Table("UserTable")]
-    public class UserTable
+    public class UserTable: Abp.Domain.Entities.Entity
     {
         [Required]
         /// <summary>

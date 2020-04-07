@@ -3,6 +3,7 @@ using Abp.Zero.EntityFrameworkCore;
 using GsfCoffee.Authorization.Roles;
 using GsfCoffee.Authorization.Users;
 using GsfCoffee.MultiTenancy;
+using GsfCoffee.CoffeeUser;
 
 namespace GsfCoffee.EntityFrameworkCore
 {
@@ -13,6 +14,9 @@ namespace GsfCoffee.EntityFrameworkCore
         public GsfCoffeeDbContext(DbContextOptions<GsfCoffeeDbContext> options)
             : base(options)
         {
+            
         }
+
+        public DbSet<UserTable> UserTable { get; set; }
     }
 }
