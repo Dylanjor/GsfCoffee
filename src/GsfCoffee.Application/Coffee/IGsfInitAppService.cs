@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Abp.Application.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace GsfCoffee.Coffee
 {
-    public interface IGsfInitAppService
+    public interface IGsfInitAppService: IApplicationService
     {
-        int main { get; set; }
+       int Main { get; set; }
     }
 }
