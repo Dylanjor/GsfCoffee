@@ -57,22 +57,32 @@ namespace GsfCoffee.Web.Host.Startup
 
             // Configure CORS for angular2 UI
             services.AddCors(
-                options => options.AddPolicy(
-                    _defaultCorsPolicyName,
-                    builder => builder
-                        .WithOrigins(
-                            // App:CorsOrigins in appsettings.json can contain more than one address separated by comma.
-                            _appConfiguration["App:CorsOrigins"]
-                                .Split(",", StringSplitOptions.RemoveEmptyEntries)
-                                .Select(o => o.RemovePostFix("/"))
-                                .ToArray()
-                        )
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials()
-                )
+            options => options.AddPolicy(
+                _defaultCorsPolicyName,
+                builder => builder
+                    .WithOrigins(
+                        // App:CorsOrigins in appsettings.json can contain more than one address separated by comma.
+                        _appConfiguration["App:CorsOrigins"]
+                            .Split(",", StringSplitOptions.RemoveEmptyEntries)
+                            .Select(o => o.RemovePostFix("/"))
+                            .ToArray()
+                    )
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials()
+            )
             );
-
+            //配置Cors 解决跨域
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy(_defaultCorsPolicyName, builder =>
+            //    {
+            //        builder.AllowAnyOrigin() //允许任何来源的主机访问
+            //        .AllowAnyMethod()
+            //        .AllowAnyHeader()
+            //        .AllowCredentials();//指定处理cookie
+            //    });
+            //});
             // Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
             {
@@ -103,7 +113,7 @@ namespace GsfCoffee.Web.Host.Startup
             app.UseAbp(options => { options.UseAbpRequestLocalization = false; }); // Initializes ABP framework.
 
             app.UseCors(_defaultCorsPolicyName); // Enable CORS!
-
+            //app.UseCors("YourPolicyName");
             app.UseStaticFiles();
 
             app.UseRouting();
