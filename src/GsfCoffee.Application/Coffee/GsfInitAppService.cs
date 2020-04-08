@@ -25,10 +25,19 @@ namespace GsfCoffee.Coffee
         /// <summary>
         /// 注册信息
         /// </summary>
-        public async Task Register(UserTable _userTable)
+        public async Task<int?> Register(UserTable _userTable)
         {
-            var usertable = ObjectMapper.Map<UserTable>(_userTable);
-            await _repository.InsertAsync(usertable);
+            try
+            {
+                var usertable = ObjectMapper.Map<UserTable>(_userTable);
+                int id = _repository.InsertAndGetId(usertable);
+                var usertb = _repository.GetAll()
+                            .Where(c => c.Id == id).Select(c => c.Numbering);
+                return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertb)).Items[0].Numbering;
+            }
+            catch (Exception e) {
+                return 0;
+            }
         }
         /// <summary>
         /// 查询信息 登录

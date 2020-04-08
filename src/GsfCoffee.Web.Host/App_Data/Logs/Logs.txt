@@ -1410,3 +1410,550 @@ INFO  2020-04-08 11:21:06,017 [27   ] c.Infrastructure.ControllerActionInvoker -
 INFO  2020-04-08 11:21:06,051 [27   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
 INFO  2020-04-08 11:21:06,109 [27   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1401.4111ms 200 application/json; charset=utf-8
 INFO  2020-04-08 11:21:06,694 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1601.267ms 200 application/json;charset=utf-8
+DEBUG 2020-04-08 15:08:54,469 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-08 15:08:54,780 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-08 15:08:54,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,850 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,852 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,853 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,854 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,855 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,857 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,858 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,860 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,862 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,865 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,866 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,867 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:08:54,878 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-08 15:08:55,247 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:08:55,248 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:08:55,248 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:08:55,248 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:08:56,916 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:09:01,633 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-08 15:09:01,978 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-08 15:09:02,240 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-08 15:09:02,345 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-08 15:09:02,532 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-08 15:09:03,482 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-08 15:09:04,482 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-08 15:09:04,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-08 15:09:04,694 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-08 15:09:04,716 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-08 15:09:04,718 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-08 15:09:04,719 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-08 15:09:04,720 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-08 15:09:04,720 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-08 15:09:04,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-08 15:09:04,721 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
+INFO  2020-04-08 15:09:14,479 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-04-08 15:09:15,783 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\dailijia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-04-08 15:09:16,105 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-04-08 15:09:16,701 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:09:34,949 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GsfCoffee.Web.Host.Controllers.HomeController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:09:40,454 [6    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:09:40,479 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.7211ms.
+INFO  2020-04-08 15:09:41,330 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-04-08 15:09:41,360 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) in 6386.9022ms
+INFO  2020-04-08 15:09:41,394 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:09:41,458 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2020-04-08 15:09:41,465 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 25363.2836ms 302 
+INFO  2020-04-08 15:09:41,598 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 137.6341ms 301 
+INFO  2020-04-08 15:09:41,613 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-04-08 15:09:42,179 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 553.9323ms 200 text/html;charset=utf-8
+INFO  2020-04-08 15:09:42,322 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2020-04-08 15:09:42,339 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2020-04-08 15:09:42,456 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2020-04-08 15:09:42,499 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 156.7232ms 200 text/css
+INFO  2020-04-08 15:09:42,535 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2020-04-08 15:09:42,541 [9    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:09:42,553 [9    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 241.0571ms 200 application/javascript
+INFO  2020-04-08 15:09:42,666 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:09:42,721 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 147.8709ms 200 application/javascript
+INFO  2020-04-08 15:09:42,887 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-04-08 15:09:42,927 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-04-08 15:09:42,952 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 51.7387ms 200 application/javascript
+INFO  2020-04-08 15:09:43,158 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-04-08 15:09:43,202 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-04-08 15:09:43,285 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 64.578ms 200 application/javascript
+INFO  2020-04-08 15:09:44,157 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-04-08 15:09:44,199 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:09:44,321 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller GsfCoffee.Web.Host.Controllers.AntiForgeryController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:09:44,337 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2020-04-08 15:09:44,377 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2020-04-08 15:09:44,463 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 110.7883ms 404 
+INFO  2020-04-08 15:09:44,481 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 136.1387ms 404 
+INFO  2020-04-08 15:09:44,532 [6    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:09:44,640 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 53.3608ms.
+INFO  2020-04-08 15:09:44,745 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:09:44,803 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) in 469.4628ms
+INFO  2020-04-08 15:09:44,814 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-04-08 15:09:44,821 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:09:44,833 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 692.4443ms 200 application/json; charset=utf-8
+INFO  2020-04-08 15:09:45,418 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 600.235ms 200 application/json;charset=utf-8
+INFO  2020-04-08 15:11:00,247 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 201
+INFO  2020-04-08 15:11:00,270 [11   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:11:00,278 [11   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:11:00,297 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:11:00,380 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:11:03,937 [11   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:11:04,039 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 93.3067ms.
+INFO  2020-04-08 15:11:04,214 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:11:04,228 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 3837.8635ms
+INFO  2020-04-08 15:11:04,237 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:11:04,246 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3999.0899ms 200 application/json; charset=utf-8
+DEBUG 2020-04-08 15:14:47,906 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-08 15:14:48,222 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-08 15:14:48,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,307 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,309 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,310 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,311 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,312 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,313 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,314 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,315 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,316 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,317 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,318 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,319 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,320 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,321 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:48,332 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-08 15:14:48,872 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:14:48,873 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:14:48,874 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:14:48,874 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:14:51,032 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:14:59,023 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-08 15:14:59,535 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-08 15:14:59,742 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-08 15:14:59,830 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-08 15:15:00,011 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-08 15:15:02,026 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-08 15:15:02,680 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-08 15:15:02,897 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-08 15:15:02,897 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-08 15:15:02,920 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-08 15:15:02,922 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-08 15:15:02,923 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-08 15:15:02,924 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-08 15:15:02,924 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-08 15:15:02,925 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-08 15:15:02,925 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
+INFO  2020-04-08 15:15:12,883 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-04-08 15:15:14,341 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\dailijia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-04-08 15:15:14,655 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-04-08 15:15:15,087 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:15:32,173 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GsfCoffee.Web.Host.Controllers.HomeController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:15:36,888 [8    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:15:36,910 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.4217ms.
+INFO  2020-04-08 15:15:37,686 [6    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-04-08 15:15:37,712 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) in 5518.3671ms
+INFO  2020-04-08 15:15:37,722 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:15:37,783 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2020-04-08 15:15:37,792 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23135.8661ms 302 
+INFO  2020-04-08 15:15:37,959 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-04-08 15:15:37,964 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 168.4234ms 301 
+INFO  2020-04-08 15:15:38,510 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 556.201ms 200 text/html;charset=utf-8
+INFO  2020-04-08 15:15:38,606 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2020-04-08 15:15:38,636 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2020-04-08 15:15:38,640 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-04-08 15:15:38,652 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-04-08 15:15:38,665 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2020-04-08 15:15:38,793 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-04-08 15:15:38,849 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-04-08 15:15:38,869 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 191.776ms 200 application/javascript
+INFO  2020-04-08 15:15:38,873 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 254.1592ms 200 application/javascript
+INFO  2020-04-08 15:15:38,889 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2020-04-08 15:15:38,901 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:15:38,930 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 318.5323ms 200 application/javascript
+INFO  2020-04-08 15:15:38,963 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 311.4764ms 200 text/css
+INFO  2020-04-08 15:15:38,997 [24   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:15:39,006 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 343.1919ms 200 application/javascript
+INFO  2020-04-08 15:15:39,647 [24   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-04-08 15:15:39,667 [24   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:15:39,701 [24   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller GsfCoffee.Web.Host.Controllers.AntiForgeryController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:15:39,814 [24   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:15:39,822 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-04-08 15:15:39,850 [24   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 22.5206ms.
+INFO  2020-04-08 15:15:40,059 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:15:40,127 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) in 413.9496ms
+INFO  2020-04-08 15:15:40,138 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:15:40,151 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 507.8902ms 200 application/json; charset=utf-8
+INFO  2020-04-08 15:15:40,183 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2020-04-08 15:15:40,209 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2020-04-08 15:15:40,214 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.1304ms 404 
+INFO  2020-04-08 15:15:40,227 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.8962ms 404 
+INFO  2020-04-08 15:15:40,694 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 856.3779ms 200 application/json;charset=utf-8
+INFO  2020-04-08 15:15:48,415 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 210
+INFO  2020-04-08 15:15:48,439 [5    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:15:48,448 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:15:48,470 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:15:48,558 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.Int32]] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:15:52,240 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:15:52,387 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 138.047ms.
+ERROR 2020-04-08 15:15:52,703 [19   ] Mvc.ExceptionHandling.AbpExceptionFilter - A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync()
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync()
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync()
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-04-08 15:15:54,145 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:15:54,168 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 5597.7398ms
+INFO  2020-04-08 15:15:54,189 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:15:54,201 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5785.8351ms 500 application/json; charset=utf-8
+INFO  2020-04-08 15:16:38,682 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 203
+INFO  2020-04-08 15:16:38,696 [20   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:16:38,709 [20   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:16:38,765 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:16:38,792 [20   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.Int32]] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:16:38,886 [20   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:16:38,959 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 46.6922ms.
+ERROR 2020-04-08 15:16:39,089 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync()
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync()
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync()
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-04-08 15:16:39,116 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:16:39,160 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 341.6236ms
+INFO  2020-04-08 15:16:39,184 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:16:39,214 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 532.466ms 500 application/json; charset=utf-8
+INFO  2020-04-08 15:16:44,919 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 203
+INFO  2020-04-08 15:16:44,935 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:16:44,944 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:16:44,962 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:16:44,989 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.Int32]] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:16:45,095 [12   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:16:45,170 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 63.8075ms.
+ERROR 2020-04-08 15:16:45,376 [19   ] Mvc.ExceptionHandling.AbpExceptionFilter - Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+Abp.Domain.Uow.AbpDbConcurrencyException: Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+ ---> Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException: Database operation expected to affect 1 row(s) but actually affected 0 row(s). Data may have been modified or deleted since entities were loaded. See http://go.microsoft.com/fwlink/?LinkId=527962 for information on understanding and handling optimistic concurrency exceptions.
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ThrowAggregateUpdateConcurrencyException(Int32 commandIndex, Int32 expectedRowsAffected, Int32 rowsAffected)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithoutPropagationAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync()
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync()
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync()
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-04-08 15:16:45,393 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:16:45,405 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 403.8942ms
+INFO  2020-04-08 15:16:45,426 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:16:45,437 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 517.8925ms 500 application/json; charset=utf-8
+INFO  2020-04-08 15:16:56,453 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 194
+INFO  2020-04-08 15:16:56,462 [6    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:16:56,470 [6    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:16:56,483 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:16:56,503 [6    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.Int32]] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:16:56,613 [6    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:16:56,663 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 39.6149ms.
+ERROR 2020-04-08 15:16:56,801 [20   ] Mvc.ExceptionHandling.AbpExceptionFilter - A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync()
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync()
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync()
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-04-08 15:16:56,850 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:16:56,878 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 352.5036ms
+INFO  2020-04-08 15:16:56,887 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:16:56,906 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 441.996ms 500 application/json; charset=utf-8
+INFO  2020-04-08 15:17:20,871 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 201
+INFO  2020-04-08 15:17:20,880 [5    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:17:20,894 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:17:20,909 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:17:20,938 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.Int32]] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:17:21,017 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:17:21,058 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 33.8251ms.
+ERROR 2020-04-08 15:17:21,176 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync()
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync()
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync()
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-04-08 15:17:21,192 [5    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:17:21,211 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 257.3877ms
+INFO  2020-04-08 15:17:21,220 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:17:21,236 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 374.5414ms 500 application/json; charset=utf-8
+DEBUG 2020-04-08 15:21:00,974 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-08 15:21:01,297 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-08 15:21:01,350 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,357 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,359 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,360 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,361 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,362 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,363 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,365 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,366 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,367 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,370 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,370 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,371 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:01,381 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-08 15:21:01,733 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:21:01,733 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:21:01,734 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:21:01,734 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:21:03,366 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:21:08,392 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-08 15:21:08,678 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-08 15:21:08,880 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-08 15:21:08,976 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-08 15:21:09,132 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-08 15:21:11,141 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-08 15:21:12,095 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-08 15:21:12,346 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-08 15:21:12,346 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-08 15:21:12,367 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-08 15:21:12,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-08 15:21:12,370 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-08 15:21:12,371 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-08 15:21:12,371 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-08 15:21:12,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-08 15:21:12,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
+INFO  2020-04-08 15:21:22,143 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-04-08 15:21:23,159 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\dailijia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-04-08 15:21:23,411 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-04-08 15:21:23,821 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:21:41,258 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GsfCoffee.Web.Host.Controllers.HomeController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:21:46,041 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:21:46,065 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.4206ms.
+INFO  2020-04-08 15:21:46,986 [12   ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-04-08 15:21:47,017 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) in 5736.94ms
+INFO  2020-04-08 15:21:47,032 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:21:47,120 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2020-04-08 15:21:47,129 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23716.8404ms 302 
+INFO  2020-04-08 15:21:47,262 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 137.857ms 301 
+INFO  2020-04-08 15:21:47,277 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-04-08 15:21:47,939 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 628.2738ms 200 text/html;charset=utf-8
+INFO  2020-04-08 15:21:48,028 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2020-04-08 15:21:48,037 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-04-08 15:21:48,048 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2020-04-08 15:21:48,060 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-04-08 15:21:48,067 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2020-04-08 15:21:48,249 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-04-08 15:21:48,249 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-04-08 15:21:48,276 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 235.5664ms 200 application/javascript
+INFO  2020-04-08 15:21:48,287 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 222.0368ms 200 application/javascript
+INFO  2020-04-08 15:21:48,330 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:21:48,334 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:21:48,344 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2020-04-08 15:21:48,362 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 336.7088ms 200 application/javascript
+INFO  2020-04-08 15:21:48,371 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 347.5219ms 200 text/css
+INFO  2020-04-08 15:21:48,395 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 334.2958ms 200 application/javascript
+INFO  2020-04-08 15:21:49,103 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-04-08 15:21:49,136 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:21:49,186 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller GsfCoffee.Web.Host.Controllers.AntiForgeryController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:21:49,304 [19   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:21:49,310 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-04-08 15:21:49,335 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 22.0264ms.
+INFO  2020-04-08 15:21:49,500 [18   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:21:49,585 [18   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) in 375.551ms
+INFO  2020-04-08 15:21:49,616 [18   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:21:49,648 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 524.0227ms 200 application/json; charset=utf-8
+INFO  2020-04-08 15:21:49,708 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2020-04-08 15:21:49,746 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2020-04-08 15:21:49,782 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 47.5786ms 404 
+INFO  2020-04-08 15:21:49,819 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 97.6552ms 404 
+INFO  2020-04-08 15:21:50,287 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 941.9461ms 200 application/json;charset=utf-8
+INFO  2020-04-08 15:22:03,684 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 210
+INFO  2020-04-08 15:22:03,711 [12   ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:22:03,726 [12   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:22:03,783 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:22:03,882 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Threading.Tasks.Task`1[System.Int32]] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:22:08,015 [12   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:22:08,166 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 142.2166ms.
+ERROR 2020-04-08 15:22:08,417 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation started on this context before a previous operation completed. This is usually caused by different threads using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.AbpDbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.Zero.EntityFrameworkCore.AbpZeroCommonDbContext`3.SaveChangesAsync(CancellationToken cancellationToken)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesInDbContextAsync(DbContext dbContext)
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.SaveChangesAsync()
+   at Abp.EntityFrameworkCore.Uow.EfCoreUnitOfWork.CompleteUowAsync()
+   at Abp.Domain.Uow.UnitOfWorkBase.CompleteAsync()
+   at Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2020-04-08 15:22:09,793 [6    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:22:09,852 [6    ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 5922.5544ms
+INFO  2020-04-08 15:22:09,871 [6    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:22:09,882 [6    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 6200.2153ms 500 application/json; charset=utf-8
+DEBUG 2020-04-08 15:28:00,159 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2020-04-08 15:28:00,786 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2020-04-08 15:28:00,866 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.Web.Host.Startup.GsfCoffeeWebHostModule, GsfCoffee.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,878 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeWebCoreModule, GsfCoffee.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,880 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeApplicationModule, GsfCoffee.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,881 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.GsfCoffeeCoreModule, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,883 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,884 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,885 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,887 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,890 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: GsfCoffee.EntityFrameworkCore.GsfCoffeeEntityFrameworkModule, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,895 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,897 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,898 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.4.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:00,911 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2020-04-08 15:28:01,223 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:28:01,223 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:28:01,223 [1    ] o.Configuration.LanguageManagementConfig - Converted GsfCoffee (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:28:01,223 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2020-04-08 15:28:03,064 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: GsfCoffee.EntityFrameworkCore.GsfCoffeeDbContext, GsfCoffee.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2020-04-08 15:28:08,162 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2020-04-08 15:28:08,469 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2020-04-08 15:28:08,674 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2020-04-08 15:28:08,781 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: GsfCoffee
+DEBUG 2020-04-08 15:28:08,996 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2020-04-08 15:28:10,109 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2020-04-08 15:28:10,788 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[GsfCoffee.MultiTenancy.Tenant, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[GsfCoffee.Authorization.Users.User, GsfCoffee.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2020-04-08 15:28:11,034 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 8 classes define auto mapping attributes
+DEBUG 2020-04-08 15:28:11,034 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2020-04-08 15:28:11,056 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.CreateUserDto
+DEBUG 2020-04-08 15:28:11,058 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Users.Dto.UserDto
+DEBUG 2020-04-08 15:28:11,059 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2020-04-08 15:28:11,060 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Sessions.Dto.UserLoginInfoDto
+DEBUG 2020-04-08 15:28:11,060 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.Roles.Dto.PermissionDto
+DEBUG 2020-04-08 15:28:11,060 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2020-04-08 15:28:11,061 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - GsfCoffee.MultiTenancy.Dto.TenantDto
+INFO  2020-04-08 15:28:21,162 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,zh-Hans,ja
+INFO  2020-04-08 15:28:22,338 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\dailijia\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2020-04-08 15:28:22,709 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2020-04-08 15:28:23,165 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:28:40,863 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller GsfCoffee.Web.Host.Controllers.HomeController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:28:45,782 [12   ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:28:45,803 [12   ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 1.3677ms.
+INFO  2020-04-08 15:28:46,664 [4    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2020-04-08 15:28:46,699 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host) in 5810.5026ms
+INFO  2020-04-08 15:28:46,712 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.HomeController.Index (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:28:46,778 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2020-04-08 15:28:46,819 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24117.7147ms 302 
+INFO  2020-04-08 15:28:46,964 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 179.9827ms 301 
+INFO  2020-04-08 15:28:46,972 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2020-04-08 15:28:47,533 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 563.3796ms 200 text/html;charset=utf-8
+INFO  2020-04-08 15:28:47,596 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2020-04-08 15:28:47,603 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2020-04-08 15:28:47,907 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2020-04-08 15:28:47,962 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:28:48,027 [18   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2020-04-08 15:28:48,039 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2020-04-08 15:28:48,044 [18   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 162.3286ms 200 application/javascript
+INFO  2020-04-08 15:28:48,051 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 377.5067ms 200 application/javascript
+INFO  2020-04-08 15:28:48,061 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 454.0632ms 200 text/css
+INFO  2020-04-08 15:28:48,103 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2020-04-08 15:28:48,172 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2020-04-08 15:28:48,181 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 87.3578ms 200 application/javascript
+INFO  2020-04-08 15:28:48,244 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2020-04-08 15:28:48,260 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'D:\Dikoe\git\GsfCoffee\src\GsfCoffee.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2020-04-08 15:28:48,276 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.8169ms 200 application/javascript
+INFO  2020-04-08 15:28:49,755 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2020-04-08 15:28:49,775 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:28:49,811 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller GsfCoffee.Web.Host.Controllers.AntiForgeryController (GsfCoffee.Web.Host).
+INFO  2020-04-08 15:28:49,896 [4    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) - Validation state: Valid
+INFO  2020-04-08 15:28:49,931 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 25.7645ms.
+INFO  2020-04-08 15:28:50,067 [11   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:28:50,129 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host) in 303.9602ms
+INFO  2020-04-08 15:28:50,145 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Web.Host.Controllers.AntiForgeryController.SetCookie (GsfCoffee.Web.Host)'
+INFO  2020-04-08 15:28:50,156 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 411.8488ms 200 application/json; charset=utf-8
+INFO  2020-04-08 15:28:50,265 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2020-04-08 15:28:50,640 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js.map  
+INFO  2020-04-08 15:28:50,658 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js.map  
+INFO  2020-04-08 15:28:50,670 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 26.5265ms 404 
+INFO  2020-04-08 15:28:50,686 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.4849ms 404 
+INFO  2020-04-08 15:28:50,879 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 606.969ms 200 application/json;charset=utf-8
+INFO  2020-04-08 15:29:01,082 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/GsfInit/Register application/json-patch+json 210
+INFO  2020-04-08 15:29:01,141 [5    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2020-04-08 15:29:01,226 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2020-04-08 15:29:01,410 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:29:01,674 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Register", controller = "GsfInit"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Int32] Register(GsfCoffee.CoffeeUser.UserTable) on controller GsfCoffee.Coffee.GsfInitAppService (GsfCoffee.Application).
+INFO  2020-04-08 15:29:06,490 [5    ] c.Infrastructure.ControllerActionInvoker - Executing action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) - Validation state: Valid
+INFO  2020-04-08 15:29:06,733 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action method GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 232.3979ms.
+INFO  2020-04-08 15:29:06,866 [19   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2020-04-08 15:29:06,892 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application) in 5202.8299ms
+INFO  2020-04-08 15:29:06,908 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'GsfCoffee.Coffee.GsfInitAppService.Register (GsfCoffee.Application)'
+INFO  2020-04-08 15:29:06,925 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 5860.0815ms 200 application/json; charset=utf-8

@@ -9,7 +9,10 @@ namespace GsfCoffee.CoffeeUser
     [Table("UserTable")]
     public class UserTable: Abp.Domain.Entities.Entity
     {
-        [Required]
+        /// <summary>
+        /// 重写id
+        /// </summary>
+        public override int Id { get; set; }
         /// <summary>
         /// 账户姓名
         /// </summary>
@@ -46,5 +49,9 @@ namespace GsfCoffee.CoffeeUser
         /// 弃用时间
         /// </summary>
         public DateTime? DeprecatedTime { get; set; }
+        /// <summary>
+        /// 不重复编号
+        /// </summary>
+        public int? Numbering { get; set; }
     }
 }
