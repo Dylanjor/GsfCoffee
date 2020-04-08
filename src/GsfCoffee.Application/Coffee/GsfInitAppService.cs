@@ -25,32 +25,38 @@ namespace GsfCoffee.Coffee
         /// <summary>
         /// 注册信息
         /// </summary>
-        public async Task<int?> Register(UserTable _userTable)
+        public int Register(UserTable _userTable)
         {
-            try
-            {
-                var usertable = ObjectMapper.Map<UserTable>(_userTable);
-                int id = _repository.InsertAndGetId(usertable);
-                var usertb = _repository.GetAll()
-                            .Where(c => c.Id == id).Select(c => c.Numbering);
-                return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertb)).Items[0].Numbering;
-            }
-            catch (Exception e) {
-                return 0;
-            }
+            var ustb = ObjectMapper.Map<UserTable>(_userTable);
+            int id =  _repository.InsertAndGetId(ustb);
+            return id;
         }
+        [HttpPost]
         /// <summary>
         /// 查询信息 登录
         /// </summary>
         /// <param name="userid">用户名</param>
         /// <param name="pwd">用户密码</param>
         /// <returns></returns>
-        public async Task<ListResultDto<UserTable>> Login(string userid,string pwd)
+        public async Task<ListResultDto<UserTable>> Login(int Num,string pwd)
         {
             var usertable = _repository
                 .GetAll()
-                .Where(c=>c.Name == userid && c.PassWord == pwd);
+                .Where(c=>c.Numbering == Num && c.PassWord == pwd);
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
+        }
+        [HttpPost]
+        /// <summary>
+        /// 用id取编码Numbering
+        /// </summary>
+        /// <param name="id">id</param>
+        /// <returns></returns>
+        public async Task<int?> GetByid(int id)
+        {
+            var usertable = _repository
+                .GetAll()
+                .Where(c => c.Id == id);
+            return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable)).Items[0].Numbering;
         }
     }
 }
