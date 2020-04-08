@@ -4,14 +4,16 @@ using GsfCoffee.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GsfCoffee.Migrations
 {
     [DbContext(typeof(GsfCoffeeDbContext))]
-    partial class GsfCoffeeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200408063629_gsftable3")]
+    partial class gsftable3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
