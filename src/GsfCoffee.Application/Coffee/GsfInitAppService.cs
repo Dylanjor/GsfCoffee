@@ -45,7 +45,7 @@ namespace GsfCoffee.Coffee
                 .Where(c=>c.Numbering == Num && c.PassWord == pwd);
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
-        [HttpPost]
+        [HttpGet]
         /// <summary>
         /// 用id取编码Numbering
         /// </summary>

@@ -63,9 +63,9 @@ namespace GsfCoffee.Web.Host.Startup
                     .WithOrigins(
                         // App:CorsOrigins in appsettings.json can contain more than one address separated by comma.
                         _appConfiguration["App:CorsOrigins"]
-                            .Split(",", StringSplitOptions.RemoveEmptyEntries)
-                            .Select(o => o.RemovePostFix("/"))
-                            .ToArray()
+                            //.Split(",", StringSplitOptions.RemoveEmptyEntries)
+                            //.Select(o => o.RemovePostFix("/"))
+                            //.ToArray()
                     )
                     .AllowAnyHeader()
                     .AllowAnyMethod()
