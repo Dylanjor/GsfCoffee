@@ -5,6 +5,6 @@ namespace GsfCoffee.Configuration
 {
     public interface IConfigurationAppService
     {
-        Task ChangeUiTheme(ChangeUiThemeInput input);
+        Task Con_ChangeUiTheme(ChangeUiThemeInput input);
     }
 }

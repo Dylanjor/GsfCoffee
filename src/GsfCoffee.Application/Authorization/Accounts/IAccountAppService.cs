@@ -6,8 +6,8 @@ namespace GsfCoffee.Authorization.Accounts
 {
     public interface IAccountAppService : IApplicationService
     {
-        Task<IsTenantAvailableOutput> IsTenantAvailable(IsTenantAvailableInput input);
+        Task<IsTenantAvailableOutput> Acc_IsTenantAvailable(IsTenantAvailableInput input);
 
-        Task<RegisterOutput> Register(RegisterInput input);
+        Task<RegisterOutput> Acc_Register(RegisterInput input);
     }
 }

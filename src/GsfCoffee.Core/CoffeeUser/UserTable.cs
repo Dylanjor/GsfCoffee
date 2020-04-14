@@ -50,6 +50,14 @@ namespace GsfCoffee.CoffeeUser
         /// </summary>
         public DateTime? DeprecatedTime { get; set; }
         /// <summary>
+        /// 创建时间
+        /// </summary>
+        public DateTime CreateTime { get; set; }
+        /// <summary>
+        /// 修改时间
+        /// </summary>
+        public DateTime? UpdateTime { get; set; }
+        /// <summary>
         /// 不重复编号
         /// </summary>
         public int? Numbering { get; set; }

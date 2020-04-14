@@ -15,6 +15,7 @@ using GsfCoffee.Authorization.Users;
 using GsfCoffee.Editions;
 using GsfCoffee.MultiTenancy.Dto;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GsfCoffee.MultiTenancy
 {
@@ -42,7 +43,7 @@ namespace GsfCoffee.MultiTenancy
             _roleManager = roleManager;
             _abpZeroDbMigrator = abpZeroDbMigrator;
         }
-
+        [HttpPost]
         public override async Task<TenantDto> CreateAsync(CreateTenantDto input)
         {
             CheckCreatePermission();
@@ -90,14 +91,12 @@ namespace GsfCoffee.MultiTenancy
 
             return MapToEntityDto(tenant);
         }
-
         protected override IQueryable<Tenant> CreateFilteredQuery(PagedTenantResultRequestDto input)
         {
             return Repository.GetAll()
                 .WhereIf(!input.Keyword.IsNullOrWhiteSpace(), x => x.TenancyName.Contains(input.Keyword) || x.Name.Contains(input.Keyword))
                 .WhereIf(input.IsActive.HasValue, x => x.IsActive == input.IsActive);
         }
-
         protected override void MapToEntity(TenantDto updateInput, Tenant entity)
         {
             // Manually mapped since TenantDto contains non-editable properties too.
@@ -105,7 +104,7 @@ namespace GsfCoffee.MultiTenancy
             entity.TenancyName = updateInput.TenancyName;
             entity.IsActive = updateInput.IsActive;
         }
-
+        [HttpPost]
         public override async Task DeleteAsync(EntityDto<int> input)
         {
             CheckDeletePermission();

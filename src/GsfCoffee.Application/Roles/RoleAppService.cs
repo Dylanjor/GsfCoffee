@@ -13,6 +13,7 @@ using GsfCoffee.Authorization.Roles;
 using GsfCoffee.Authorization.Users;
 using GsfCoffee.Roles.Dto;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace GsfCoffee.Roles
@@ -29,7 +30,7 @@ namespace GsfCoffee.Roles
             _roleManager = roleManager;
             _userManager = userManager;
         }
-
+        [HttpPost]
         public override async Task<RoleDto> CreateAsync(CreateRoleDto input)
         {
             CheckCreatePermission();
@@ -48,8 +49,8 @@ namespace GsfCoffee.Roles
 
             return MapToEntityDto(role);
         }
-
-        public async Task<ListResultDto<RoleListDto>> GetRolesAsync(GetRolesInput input)
+        [HttpPost]
+        public async Task<ListResultDto<RoleListDto>> Rol_GetRolesAsync(GetRolesInput input)
         {
             var roles = await _roleManager
                 .Roles
@@ -61,7 +62,7 @@ namespace GsfCoffee.Roles
 
             return new ListResultDto<RoleListDto>(ObjectMapper.Map<List<RoleListDto>>(roles));
         }
-
+        [HttpPost]
         public override async Task<RoleDto> UpdateAsync(RoleDto input)
         {
             CheckUpdatePermission();
@@ -81,7 +82,7 @@ namespace GsfCoffee.Roles
 
             return MapToEntityDto(role);
         }
-
+        [HttpPost]
         public override async Task DeleteAsync(EntityDto<int> input)
         {
             CheckDeletePermission();
@@ -96,8 +97,8 @@ namespace GsfCoffee.Roles
 
             CheckErrors(await _roleManager.DeleteAsync(role));
         }
-
-        public Task<ListResultDto<PermissionDto>> GetAllPermissions()
+        [HttpPost]
+        public Task<ListResultDto<PermissionDto>> Rol_GetAllPermissions()
         {
             var permissions = PermissionManager.GetAllPermissions();
 
@@ -128,8 +129,8 @@ namespace GsfCoffee.Roles
         {
             identityResult.CheckErrors(LocalizationManager);
         }
-
-        public async Task<GetRoleForEditOutput> GetRoleForEdit(EntityDto input)
+        [HttpPost]
+        public async Task<GetRoleForEditOutput> Rol_GetRoleForEdit(EntityDto input)
         {
             var permissions = PermissionManager.GetAllPermissions();
             var role = await _roleManager.GetRoleByIdAsync(input.Id);

@@ -3,6 +3,7 @@ using Abp.Configuration;
 using Abp.Zero.Configuration;
 using GsfCoffee.Authorization.Accounts.Dto;
 using GsfCoffee.Authorization.Users;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GsfCoffee.Authorization.Accounts
 {
@@ -18,8 +19,8 @@ namespace GsfCoffee.Authorization.Accounts
         {
             _userRegistrationManager = userRegistrationManager;
         }
-
-        public async Task<IsTenantAvailableOutput> IsTenantAvailable(IsTenantAvailableInput input)
+        [HttpPost]
+        public async Task<IsTenantAvailableOutput> Acc_IsTenantAvailable(IsTenantAvailableInput input)
         {
             var tenant = await TenantManager.FindByTenancyNameAsync(input.TenancyName);
             if (tenant == null)
@@ -34,8 +35,8 @@ namespace GsfCoffee.Authorization.Accounts
 
             return new IsTenantAvailableOutput(TenantAvailabilityState.Available, tenant.Id);
         }
-
-        public async Task<RegisterOutput> Register(RegisterInput input)
+        [HttpPost]
+        public async Task<RegisterOutput> Acc_Register(RegisterInput input)
         {
             var user = await _userRegistrationManager.RegisterAsync(
                 input.Name,

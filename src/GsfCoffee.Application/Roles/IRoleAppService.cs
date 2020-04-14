@@ -7,10 +7,10 @@ namespace GsfCoffee.Roles
 {
     public interface IRoleAppService : IAsyncCrudAppService<RoleDto, int, PagedRoleResultRequestDto, CreateRoleDto, RoleDto>
     {
-        Task<ListResultDto<PermissionDto>> GetAllPermissions();
+        Task<ListResultDto<PermissionDto>> Rol_GetAllPermissions();
 
-        Task<GetRoleForEditOutput> GetRoleForEdit(EntityDto input);
+        Task<GetRoleForEditOutput> Rol_GetRoleForEdit(EntityDto input);
 
-        Task<ListResultDto<RoleListDto>> GetRolesAsync(GetRolesInput input);
+        Task<ListResultDto<RoleListDto>> Rol_GetRolesAsync(GetRolesInput input);
     }
 }

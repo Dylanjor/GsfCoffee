@@ -3,6 +3,7 @@ using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using GsfCoffee.CoffeeUser;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace GsfCoffee.Coffee
         public int Register(UserTable _userTable)
         {
             var ustb = ObjectMapper.Map<UserTable>(_userTable);
-            int id =  _repository.InsertAndGetId(ustb);
+            int id = _repository.InsertAndGetId(ustb);
             return id;
         }
         [HttpPost]
@@ -40,9 +41,10 @@ namespace GsfCoffee.Coffee
         /// <returns></returns>
         public async Task<ListResultDto<UserTable>> Login(int Num,string pwd)
         {
-            var usertable = _repository
+            var usertable = await _repository
                 .GetAll()
-                .Where(c=>c.Numbering == Num && c.PassWord == pwd);
+                .Where(c => c.Numbering == Num && c.PassWord == pwd)
+                .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
         [HttpGet]
@@ -53,10 +55,45 @@ namespace GsfCoffee.Coffee
         /// <returns></returns>
         public async Task<int?> GetByid(int id)
         {
-            var usertable = _repository
+            var usertable = await _repository
                 .GetAll()
-                .Where(c => c.Id == id);
+                .Where(c => c.Id == id)
+                .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable)).Items[0].Numbering;
+        }
+        [HttpPost]
+        /// <summary>
+        /// 查询所有的信息 
+        /// 是否是vip 默认为是 
+        /// 是否弃用 默认是否
+        /// </summary>
+        /// <param name="Delivery">是否是vip 默认为是</param>
+        /// <param name="Deprecated">是否弃用 默认是否</param>
+        /// <returns></returns>
+        public async Task<ListResultDto<UserTable>> GetAllasync( bool Delivery = true,bool Deprecated = false) {
+            var usertable = await _repository
+                .GetAll()
+                .Where(c=>c.Delivery==Delivery && c.Deprecated == Deprecated)
+                .ToListAsync();
+            return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
+        }
+        [HttpPost]
+        /// <summary>
+        /// 修改账户信息
+        /// </summary>
+        /// <param name="_userTable"></param>
+        public async void Updateasync(UserTable _userTable) {
+            try
+            {
+                if (_userTable != null)
+                {
+                    var task = ObjectMapper.Map<UserTable>(_userTable);
+                    await _repository.UpdateAsync(task);
+                }
+            }
+            catch { 
+                
+            }
         }
     }
 }

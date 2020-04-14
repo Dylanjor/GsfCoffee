@@ -20,6 +20,7 @@ using GsfCoffee.Authorization.Users;
 using GsfCoffee.Roles.Dto;
 using GsfCoffee.Users.Dto;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace GsfCoffee.Users
@@ -51,7 +52,7 @@ namespace GsfCoffee.Users
             _abpSession = abpSession;
             _logInManager = logInManager;
         }
-
+        [HttpPost]
         public override async Task<UserDto> CreateAsync(CreateUserDto input)
         {
             CheckCreatePermission();
@@ -74,7 +75,7 @@ namespace GsfCoffee.Users
 
             return MapToEntityDto(user);
         }
-
+        [HttpPost]
         public override async Task<UserDto> UpdateAsync(UserDto input)
         {
             CheckUpdatePermission();
@@ -92,19 +93,19 @@ namespace GsfCoffee.Users
 
             return await GetAsync(input);
         }
-
+        [HttpPost]
         public override async Task DeleteAsync(EntityDto<long> input)
         {
             var user = await _userManager.GetUserByIdAsync(input.Id);
             await _userManager.DeleteAsync(user);
         }
-
+        [HttpPost]
         public async Task<ListResultDto<RoleDto>> GetRoles()
         {
             var roles = await _roleRepository.GetAllListAsync();
             return new ListResultDto<RoleDto>(ObjectMapper.Map<List<RoleDto>>(roles));
         }
-
+        [HttpPost]
         public async Task ChangeLanguage(ChangeUserLanguageDto input)
         {
             await SettingManager.ChangeSettingForUserAsync(
@@ -167,7 +168,7 @@ namespace GsfCoffee.Users
         {
             identityResult.CheckErrors(LocalizationManager);
         }
-
+        [HttpPost]
         public async Task<bool> ChangePassword(ChangePasswordDto input)
         {
             if (_abpSession.UserId == null)
@@ -189,7 +190,7 @@ namespace GsfCoffee.Users
             CurrentUnitOfWork.SaveChanges();
             return true;
         }
-
+        [HttpPost]
         public async Task<bool> ResetPassword(ResetPasswordDto input)
         {
             if (_abpSession.UserId == null)
