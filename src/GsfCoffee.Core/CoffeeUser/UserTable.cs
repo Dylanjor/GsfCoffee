@@ -61,5 +61,9 @@ namespace GsfCoffee.CoffeeUser
         /// 不重复编号
         /// </summary>
         public int? Numbering { get; set; }
+        /// <summary>
+        /// 手机号码
+        /// </summary>
+        public string tel { get; set; }
     }
 }
