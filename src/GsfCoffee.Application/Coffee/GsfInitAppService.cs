@@ -39,11 +39,11 @@ namespace GsfCoffee.Coffee
         /// <param name="userid">用户名</param>
         /// <param name="pwd">用户密码</param>
         /// <returns></returns>
-        public async Task<ListResultDto<UserTable>> Login(int Num,string pwd)
+        public async Task<ListResultDto<UserTable>> Login(string Num,string pwd)
         {
             var usertable = await _repository
                 .GetAll()
-                .Where(c => c.Numbering == Num && c.PassWord == pwd)
+                .Where(c => c.Numbering == int.Parse(Num) && c.PassWord == pwd|| c.tel == Num && c.PassWord == pwd)
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
