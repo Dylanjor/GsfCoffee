@@ -64,6 +64,6 @@ namespace GsfCoffee.CoffeeUser
         /// <summary>
         /// 手机号码
         /// </summary>
-        public string tel { get; set; }
+        public string Tel { get; set; }
     }
 }

@@ -4,14 +4,16 @@ using GsfCoffee.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GsfCoffee.Migrations
 {
     [DbContext(typeof(GsfCoffeeDbContext))]
-    partial class GsfCoffeeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200415081701_dddd")]
+    partial class dddd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1635,9 +1637,6 @@ namespace GsfCoffee.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CommImage")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("CommodityName")
                         .HasColumnType("nvarchar(max)");
 
@@ -1664,9 +1663,6 @@ namespace GsfCoffee.Migrations
 
                     b.Property<int?>("SellingPrice")
                         .HasColumnType("int");
-
-                    b.Property<string>("Specification")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

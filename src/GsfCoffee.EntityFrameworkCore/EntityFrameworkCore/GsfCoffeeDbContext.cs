@@ -4,6 +4,7 @@ using GsfCoffee.Authorization.Roles;
 using GsfCoffee.Authorization.Users;
 using GsfCoffee.MultiTenancy;
 using GsfCoffee.CoffeeUser;
+using GsfCoffee.OrderTable;
 
 namespace GsfCoffee.EntityFrameworkCore
 {
@@ -16,7 +17,29 @@ namespace GsfCoffee.EntityFrameworkCore
         {
             
         }
-
+        /// <summary>
+        /// 用户表
+        /// </summary>
         public DbSet<UserTable> UserTable { get; set; }
+        /// <summary>
+        /// 退货表
+        /// </summary>
+        public DbSet<ReturnTable> ReturnTable { get; set; }
+        /// <summary>
+        /// 订单行
+        /// </summary>
+        public DbSet<OrderLineTable> OrderLineTable { get; set; }
+        /// <summary>
+        /// 订单表
+        /// </summary>
+        public DbSet<OrderHeaderTable> OrderHeaderTable { get; set; }
+        /// <summary>
+        /// 商品表
+        /// </summary>
+        public DbSet<CommodityTable> CommodityTable { get; set; }
+        /// <summary>
+        /// 购物车表
+        /// </summary>
+        public DbSet<ShoppingCartTable> ShoppingCartTable { get; set; }
     }
 }

@@ -4,14 +4,16 @@ using GsfCoffee.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GsfCoffee.Migrations
 {
     [DbContext(typeof(GsfCoffeeDbContext))]
-    partial class GsfCoffeeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200415034758_dd")]
+    partial class dd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1521,7 +1523,7 @@ namespace GsfCoffee.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("CreateTime")
+                    b.Property<DateTime?>("CreateTime")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("Date")
@@ -1635,9 +1637,6 @@ namespace GsfCoffee.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("CommImage")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("CommodityName")
                         .HasColumnType("nvarchar(max)");
 
@@ -1647,7 +1646,7 @@ namespace GsfCoffee.Migrations
                     b.Property<DateTime?>("CreateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DeletDateTime")
+                    b.Property<DateTime?>("DateTime")
                         .HasColumnType("datetime2");
 
                     b.Property<bool>("IsBom")
@@ -1664,9 +1663,6 @@ namespace GsfCoffee.Migrations
 
                     b.Property<int?>("SellingPrice")
                         .HasColumnType("int");
-
-                    b.Property<string>("Specification")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -1752,7 +1748,7 @@ namespace GsfCoffee.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime?>("CreateTime")
+                    b.Property<DateTime?>("CreatTime")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("FounderId")
@@ -1779,13 +1775,13 @@ namespace GsfCoffee.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime?>("BoughtTime")
+                    b.Property<DateTime>("BoughtTime")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("CommodityId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("CreateTime")
+                    b.Property<DateTime>("CreateTime")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("FounderId")

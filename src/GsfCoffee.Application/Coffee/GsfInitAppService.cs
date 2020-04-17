@@ -43,7 +43,7 @@ namespace GsfCoffee.Coffee
         {
             var usertable = await _repository
                 .GetAll()
-                .Where(c => c.Numbering == int.Parse(Num) && c.PassWord == pwd|| c.tel == Num && c.PassWord == pwd)
+                .Where(c => c.Numbering == int.Parse(Num) && c.PassWord == pwd|| c.Tel == Num && c.PassWord == pwd)
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
@@ -87,6 +87,11 @@ namespace GsfCoffee.Coffee
             {
                 if (_userTable != null)
                 {
+                    var usertable = _repository
+                                            .GetAll()
+                                            .Where(c => c.Id == _userTable.Id)
+                                            .FirstOrDefault();
+                    _userTable.CreateTime = usertable.CreateTime;
                     var task = ObjectMapper.Map<UserTable>(_userTable);
                     await _repository.UpdateAsync(task);
                 }
