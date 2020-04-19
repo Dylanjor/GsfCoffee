@@ -41,5 +41,9 @@ namespace GsfCoffee.EntityFrameworkCore
         /// 购物车表
         /// </summary>
         public DbSet<ShoppingCartTable> ShoppingCartTable { get; set; }
+        /// <summary>
+        /// 商品类别表
+        /// </summary>
+        public DbSet<ProductSpecificationsTable> ProductSpecificationsTable { get; set; }
     }
 }

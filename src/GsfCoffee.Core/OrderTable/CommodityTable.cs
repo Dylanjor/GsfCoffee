@@ -24,13 +24,9 @@ namespace GsfCoffee.OrderTable
         /// </summary>
         public string CommImage { get; set; }
         /// <summary>
-        /// 商品规格
-        /// </summary>
-        public string Specification { get; set; }
-        /// <summary>
         /// 商品类型
         /// </summary>
-        public string CommodityType { get; set; }
+        public int CommodityTypeId { get; set; }
         /// <summary>
         /// 是否是物料 不是物料就是成品
         /// </summary>
@@ -59,5 +55,9 @@ namespace GsfCoffee.OrderTable
         /// 删除时间
         /// </summary>
         public DateTime? DeletDateTime { get; set; }
+        /// <summary>
+        /// 描述
+        /// </summary>
+        public string Desc { get; set; }
     }
 }

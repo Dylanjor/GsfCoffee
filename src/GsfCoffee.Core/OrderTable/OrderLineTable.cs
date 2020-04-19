@@ -20,6 +20,10 @@ namespace GsfCoffee.OrderTable
         /// </summary>
         public int CommodityId { get; set; }
         /// <summary>
+        /// 商品规格
+        /// </summary>
+        public string Specification { get; set; }
+        /// <summary>
         /// 数量
         /// </summary>
         public int Qty { get; set; }
