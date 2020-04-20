@@ -5,11 +5,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GsfCoffee.Coffee
 {
+    /// <summary>
+    /// 商品类
+    /// </summary>
     public class CommodityAppService:GsfCoffeeAppServiceBase, ICommodityAppService
     {
         private readonly IRepository<CommodityTable> _repositoryComm;       //商品表
@@ -22,7 +26,7 @@ namespace GsfCoffee.Coffee
         /// </summary>
         /// <param name="commodityTable"></param>
         [HttpPost]
-        public async void insertComm(CommodityTable commodityTable)
+        public async void InsertComm(CommodityTable commodityTable)
         {
             await _repositoryComm.InsertAsync(commodityTable);
         }
@@ -32,28 +36,30 @@ namespace GsfCoffee.Coffee
         /// <param name="commodityTable"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<ListResultDto<CommodityTable>> updateComm(CommodityTable commodityTable) {
+        public async Task<ListResultDto<CommodityTable>> UpdateComm(CommodityTable commodityTable) {
             await _repositoryComm.UpdateAsync(commodityTable);
             var commodity = _repositoryComm.GetAll()
                 .ToListAsync();
             return new ListResultDto<CommodityTable>(ObjectMapper.Map<List<CommodityTable>>(commodity));
         }
         /// <summary>
-        /// 删除商品
+        /// 删除商品（根据商品id）
         /// </summary>
-        /// <param name="CommId"></param>
+        /// <param name="CommId">商品id</param>
         [HttpGet]
         public async void DeleteComm(int CommId) {
            await _repositoryComm.DeleteAsync(CommId);
         }
         /// <summary>
-        /// 查询商品
+        /// 查询商品（跟据商品类型id）
         /// </summary>
+        /// <param name="ProdSpec">商品类型id</param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<ListResultDto<CommodityTable>> GetAllComm()
+        public async Task<ListResultDto<CommodityTable>> GetAllComm(int ProdSpec)
         {
             var commodity = await _repositoryComm.GetAll()
+                .Where(c=>c.CommodityTypeId == ProdSpec)
                 .ToListAsync();
             return new ListResultDto<CommodityTable>(ObjectMapper.Map<List<CommodityTable>>(commodity));
         }

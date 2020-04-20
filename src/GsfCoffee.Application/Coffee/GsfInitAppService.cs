@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace GsfCoffee.Coffee
 {
+    /// <summary>
+    /// 用户类
+    /// </summary>
     public class GsfInitAppService : GsfCoffeeAppServiceBase, IGsfInitAppService
     {
         private readonly IRepository<UserTable> _repository;
@@ -39,11 +42,26 @@ namespace GsfCoffee.Coffee
         /// <param name="userid">用户名</param>
         /// <param name="pwd">用户密码</param>
         /// <returns></returns>
-        public async Task<ListResultDto<UserTable>> Login(string Num,string pwd)
+        public async Task<ListResultDto<UserTable>> Login(string Num, string pwd)
         {
             var usertable = await _repository
                 .GetAll()
-                .Where(c => c.Numbering == int.Parse(Num) && c.PassWord == pwd|| c.Tel == Num && c.PassWord == pwd)
+                .Where(c => c.Numbering == int.Parse(Num) && c.PassWord == pwd || c.Tel == Num && c.PassWord == pwd)
+                .ToListAsync();
+            return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
+        }
+        [HttpGet]
+        /// <summary>
+        /// 修改之前的获取数据
+        /// </summary>
+        /// <param name="Num"></param>
+        /// <param name="pwd"></param>
+        /// <returns></returns>
+        public async Task<ListResultDto<UserTable>> UpdateLogin(string Num)
+        {
+            var usertable = await _repository
+                .GetAll()
+                .Where(c => c.Numbering == int.Parse(Num))
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
@@ -70,10 +88,10 @@ namespace GsfCoffee.Coffee
         /// <param name="Delivery">是否是vip 默认为是</param>
         /// <param name="Deprecated">是否弃用 默认是否</param>
         /// <returns></returns>
-        public async Task<ListResultDto<UserTable>> GetAllasync( bool Delivery = true,bool Deprecated = false) {
+        public async Task<ListResultDto<UserTable>> GetAllasync(bool Delivery = true, bool Deprecated = false) {
             var usertable = await _repository
                 .GetAll()
-                .Where(c=>c.Delivery==Delivery && c.Deprecated == Deprecated)
+                .Where(c => c.Delivery == Delivery && c.Deprecated == Deprecated)
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
@@ -96,9 +114,17 @@ namespace GsfCoffee.Coffee
                     await _repository.UpdateAsync(task);
                 }
             }
-            catch { 
-                
+            catch {
+
             }
+        }
+        /// <summary>
+        /// 删除此用户
+        /// </summary>
+        /// <param name="id"></param>
+        [HttpGet]
+        public async void Delete(int id) {
+            await _repository.DeleteAsync(id);
         }
     }
 }

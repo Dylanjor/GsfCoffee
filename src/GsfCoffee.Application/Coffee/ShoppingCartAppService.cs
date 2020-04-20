@@ -13,6 +13,9 @@ using System.Threading.Tasks;
 
 namespace GsfCoffee.Coffee
 {
+    /// <summary>
+    /// 购物车类
+    /// </summary>
     public class ShoppingCartAppService : GsfCoffeeAppServiceBase, IShoppingCartAppService
     {
         /// <summary>

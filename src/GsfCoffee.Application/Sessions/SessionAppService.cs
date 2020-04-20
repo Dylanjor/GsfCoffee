@@ -5,7 +5,7 @@ using GsfCoffee.Sessions.Dto;
 
 namespace GsfCoffee.Sessions
 {
-    public class SessionAppService : GsfCoffeeAppServiceBase, ISessionAppService
+    class SessionAppService : GsfCoffeeAppServiceBase, ISessionAppService
     {
         [DisableAuditing]
         public async Task<GetCurrentLoginInformationsOutput> GetCurrentLoginInformations()

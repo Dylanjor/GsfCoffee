@@ -4,14 +4,16 @@ using GsfCoffee.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GsfCoffee.Migrations
 {
     [DbContext(typeof(GsfCoffeeDbContext))]
-    partial class GsfCoffeeDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200420054035_c")]
+    partial class c
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1662,6 +1664,9 @@ namespace GsfCoffee.Migrations
                     b.Property<int?>("PurchasePrice")
                         .HasColumnType("int");
 
+                    b.Property<int?>("Qty")
+                        .HasColumnType("int");
+
                     b.Property<int?>("SellingPrice")
                         .HasColumnType("int");
 
@@ -1803,9 +1808,6 @@ namespace GsfCoffee.Migrations
                     b.Property<DateTime?>("CreateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Desc")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("FounderId")
                         .HasColumnType("int");
 
@@ -1813,15 +1815,6 @@ namespace GsfCoffee.Migrations
                         .HasColumnType("bit");
 
                     b.Property<int>("Qty")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Specification")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("TotalCost")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UnitPrice")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

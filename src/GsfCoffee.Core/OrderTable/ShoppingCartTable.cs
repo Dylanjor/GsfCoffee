@@ -24,6 +24,18 @@ namespace GsfCoffee.OrderTable
         /// </summary>
         public int Qty { get; set; }
         /// <summary>
+        /// 总价格
+        /// </summary>
+        public int TotalCost { get; set; }
+        /// <summary>
+        /// 规格
+        /// </summary>
+        public string Specification { get; set; }
+        /// <summary>
+        /// 单位价格
+        /// </summary>
+        public int UnitPrice { get; set; }
+        /// <summary>
         /// 创建时间
         /// </summary>
         public DateTime? CreateTime { get; set; }
@@ -39,5 +51,9 @@ namespace GsfCoffee.OrderTable
         /// 创建人Id
         /// </summary>
         public int FounderId { get; set; }
+        /// <summary>
+        /// 描述
+        /// </summary>
+        public string Desc { get; set; }
     }
 }

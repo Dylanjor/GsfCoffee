@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Abp.Configuration;
 using Abp.Zero.Configuration;
@@ -7,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GsfCoffee.Authorization.Accounts
 {
-    public class AccountAppService : GsfCoffeeAppServiceBase, IAccountAppService
+    class AccountAppService : GsfCoffeeAppServiceBase, IAccountAppService
     {
         // from: http://regexlib.com/REDetails.aspx?regexp_id=1923
         public const string PasswordRegex = "(?=^.{8,}$)(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\s)[0-9a-zA-Z!@#$%^&*()]*$";

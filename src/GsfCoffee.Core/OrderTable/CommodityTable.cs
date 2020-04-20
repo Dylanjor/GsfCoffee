@@ -36,10 +36,6 @@ namespace GsfCoffee.OrderTable
         /// </summary>
         public int? PurchasePrice { get; set; }
         /// <summary>
-        /// BOM现有数量
-        /// </summary>
-        public int? Qty { get; set; }
-        /// <summary>
         /// 售价
         /// </summary>
         public int? SellingPrice { get; set; }
