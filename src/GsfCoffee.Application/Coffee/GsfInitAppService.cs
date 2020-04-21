@@ -1,6 +1,7 @@
 ﻿using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
+using AutoMapper;
 using GsfCoffee.CoffeeUser;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -95,12 +96,13 @@ namespace GsfCoffee.Coffee
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
-        [HttpPost]
         /// <summary>
         /// 修改账户信息
         /// </summary>
         /// <param name="_userTable"></param>
-        public async void Updateasync(UserTable _userTable) {
+        [HttpPost]
+        public async Task<string> Updateasync(UserTable _userTable) {
+
             try
             {
                 if (_userTable != null)
@@ -108,15 +110,17 @@ namespace GsfCoffee.Coffee
                     var usertable = _repository
                                             .GetAll()
                                             .Where(c => c.Id == _userTable.Id)
+                                            .AsNoTracking()
                                             .FirstOrDefault();
                     _userTable.CreateTime = usertable.CreateTime;
                     var task = ObjectMapper.Map<UserTable>(_userTable);
                     await _repository.UpdateAsync(task);
                 }
             }
-            catch {
-
+            catch(Exception error){
+                return error.ToString();
             }
+            return ("success");
         }
         /// <summary>
         /// 删除此用户
