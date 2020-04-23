@@ -40,7 +40,7 @@ namespace GsfCoffee.Coffee
         [HttpGet]
         public async Task<ListResultDto<ShoppingCartTable>> GetShoppingByUserId(int _UserId) {
             var Shoppingtable = await _repositoryShop.GetAll()
-                .Where(c => c.FounderId == _UserId)
+                .Where(c => c.FounderId == _UserId && c.IsBought ==  false)
                 .ToListAsync();
             return new ListResultDto<ShoppingCartTable>(ObjectMapper.Map<List<ShoppingCartTable>>(Shoppingtable));
         }
@@ -52,6 +52,7 @@ namespace GsfCoffee.Coffee
         [HttpPost]
         public  void UpdateShoppingQty(ShoppingCartTable _shoppingCartTable) {
             try {
+                ShoppingCartTable shoppingCartTable;
                 var Shoppingtable =  _repositoryShop.GetAll()
                     .Where(c => c.CommodityId == _shoppingCartTable.CommodityId
                      && c.FounderId == _shoppingCartTable.FounderId
@@ -70,7 +71,11 @@ namespace GsfCoffee.Coffee
                     }
                     else
                     {
-                         _repositoryShop.Update(_shoppingCartTable);
+                        // 加一
+                        shoppingCartTable = new ListResultDto<ShoppingCartTable>(ObjectMapper.Map<List<ShoppingCartTable>>(Shoppingtable)).Items[0];
+                        shoppingCartTable.Qty = _shoppingCartTable.Qty + shoppingCartTable.Qty;
+                        shoppingCartTable.TotalCost = shoppingCartTable.Qty * shoppingCartTable.UnitPrice;
+                        _repositoryShop.Update(shoppingCartTable);
                     }
                 }
             }
