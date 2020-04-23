@@ -53,7 +53,9 @@ namespace GsfCoffee.Coffee
         public  void UpdateShoppingQty(ShoppingCartTable _shoppingCartTable) {
             try {
                 var Shoppingtable =  _repositoryShop.GetAll()
-                    .Where(c => c.Id == _shoppingCartTable.Id)
+                    .Where(c => c.CommodityId == _shoppingCartTable.CommodityId
+                     && c.FounderId == _shoppingCartTable.FounderId
+                     && c.Specification == _shoppingCartTable.Specification)
                     .ToList();
                 // 如果购物车中没有此id就创建
                 if (Shoppingtable.Count == 0)
