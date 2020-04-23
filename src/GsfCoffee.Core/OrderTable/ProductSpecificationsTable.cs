@@ -14,5 +14,9 @@ namespace GsfCoffee.OrderTable
         /// 商品类型名称
         /// </summary>
         public string TypeName { get; set; }
+        /// <summary>
+        /// 上级类型
+        /// </summary>
+        public int TypeTop { get; set; }
     }
 }

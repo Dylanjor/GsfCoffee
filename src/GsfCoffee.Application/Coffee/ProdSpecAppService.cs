@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Dynamic.Core;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -64,6 +65,19 @@ namespace GsfCoffee.Coffee
         public async Task<ListResultDto<ProductSpecificationsTable>> GetAllList()
         {
             var ProdSpec = await _repositoryProd.GetAll()
+                .Where(c=>c.TypeTop!=0)
+                .ToListAsync();
+            return new ListResultDto<ProductSpecificationsTable>(ObjectMapper.Map<List<ProductSpecificationsTable>>(ProdSpec));
+        }
+        [HttpGet]
+        /// <summary>
+        /// 根据上级TYPETop
+        /// </summary>
+        /// <returns></returns>
+        public async Task<ListResultDto<ProductSpecificationsTable>> GetAllListByTypeTop(int top)
+        {
+            var ProdSpec = await _repositoryProd.GetAll()
+                .Where(c => c.TypeTop == top)
                 .ToListAsync();
             return new ListResultDto<ProductSpecificationsTable>(ObjectMapper.Map<List<ProductSpecificationsTable>>(ProdSpec));
         }
