@@ -61,6 +61,7 @@ namespace GsfCoffee.Coffee
                 // 如果购物车中没有此id就创建
                 if (Shoppingtable.Count == 0)
                 {
+                     _shoppingCartTable.TotalCost = _shoppingCartTable.Qty * _shoppingCartTable.UnitPrice;
                      _repositoryShop.Insert(_shoppingCartTable);
                 }
                 else {
