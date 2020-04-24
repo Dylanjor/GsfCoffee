@@ -31,6 +31,19 @@ namespace GsfCoffee.Coffee
             await _repositoryComm.InsertAsync(commodityTable);
         }
         /// <summary>
+        /// 获取商品具体信息通过商品的ID
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<ListResultDto<CommodityTable>> GetCommByCommId(int Id)
+        {
+            var commodity = await _repositoryComm.GetAll()
+                .Where(c => c.Id == Id)
+                .ToListAsync();
+            return new ListResultDto<CommodityTable>(ObjectMapper.Map<List<CommodityTable>>(commodity));
+        }
+        /// <summary>
         /// 修改商品信息 返回全部的商品信息
         /// </summary>
         /// <param name="commodityTable"></param>

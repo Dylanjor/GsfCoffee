@@ -20,48 +20,52 @@ namespace GsfCoffee.Coffee
     {
         private readonly IRepository<ProductSpecificationsTable> _repositoryProd;
         private readonly IRepository<CommodityTable> _repositoryComm;
+        /// <summary>
+        /// 注入
+        /// </summary>
+        /// <param name="repositoryProd">类别表</param>
+        /// <param name="repositoryComm">商品表</param>
         public ProdSpecAppService(IRepository<ProductSpecificationsTable> repositoryProd,
                                   IRepository<CommodityTable> repositoryComm) {
             _repositoryProd = repositoryProd;
             _repositoryComm = repositoryComm;
         }
-        [HttpGet]
         /// <summary>
         /// 跟据typeId查询typename
         /// </summary>
         /// <param name="TypeId"></param>
         /// <returns></returns>
+        [HttpGet]
         public async Task<ListResultDto<ProductSpecificationsTable>> GetByTypeId(int TypeId) {
             var ProdSpec = await _repositoryProd.GetAll()
                 .Where(c => c.Id == TypeId)
                 .ToListAsync();
             return new ListResultDto<ProductSpecificationsTable>(ObjectMapper.Map<List<ProductSpecificationsTable>>(ProdSpec));
         }
-        [HttpPost]
         /// <summary>
         /// 添加商品类型信息
         /// </summary>
         /// <param name="prodspec"></param>
         /// <returns></returns>
+        [HttpPost]
         public async void InsertProdspec(ProductSpecificationsTable prodspec) {
             try { await _repositoryProd.InsertAsync(prodspec); }
             catch { }
         }
-        [HttpPost]
         /// <summary>
         /// 修改商品类型信息
         /// </summary>
         /// <param name="prodspec"></param>
         /// <returns></returns>
+        [HttpPost]
         public async void UpdateProdspec(ProductSpecificationsTable prodspec) {
             await _repositoryProd.UpdateAsync(prodspec);
         }
-        [HttpPost]
         /// <summary>
         /// 所有的商品类型
         /// </summary>
-        /// <param name="TypeId"></param>
         /// <returns></returns>
+        [HttpPost]
         public async Task<ListResultDto<ProductSpecificationsTable>> GetAllList()
         {
             var ProdSpec = await _repositoryProd.GetAll()
@@ -69,11 +73,12 @@ namespace GsfCoffee.Coffee
                 .ToListAsync();
             return new ListResultDto<ProductSpecificationsTable>(ObjectMapper.Map<List<ProductSpecificationsTable>>(ProdSpec));
         }
-        [HttpGet]
         /// <summary>
-        /// 根据上级TYPETop
+        /// 根据上级TypeTop查下级所有
         /// </summary>
+        /// <param name="top"></param>
         /// <returns></returns>
+        [HttpGet]
         public async Task<ListResultDto<ProductSpecificationsTable>> GetAllListByTypeTop(int top)
         {
             var ProdSpec = await _repositoryProd.GetAll()

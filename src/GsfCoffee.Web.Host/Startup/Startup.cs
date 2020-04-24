@@ -18,6 +18,7 @@ using Abp.Dependency;
 using Abp.Json;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
+using System.IO;
 
 namespace GsfCoffee.Web.Host.Startup
 {
@@ -97,6 +98,12 @@ namespace GsfCoffee.Web.Host.Startup
                     In = ParameterLocation.Header,
                     Type = SecuritySchemeType.ApiKey
                 });
+                var commentsFiles = System.IO.Directory.GetFiles(System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "*.xml")
+                                .Where(f => System.IO.Path.GetFileName(f).StartsWith("GsfCoffee"));
+                foreach (var item in commentsFiles)
+                {
+                    options.IncludeXmlComments(item);
+                }
             });
 
             // Configure Abp and Dependency Injection

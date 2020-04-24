@@ -22,27 +22,30 @@ namespace GsfCoffee.Coffee
 
         Task IGsfInitAppService.Register { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         Task<ListResultDto<UserTable>> IGsfInitAppService.Login { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        /// <summary>
+        /// 注入
+        /// </summary>
+        /// <param name="repository"></param>
         public GsfInitAppService(IRepository<UserTable> repository) {
             _repository = repository;
         }
-        [HttpPost]
         /// <summary>
-        /// 注册信息
+        /// 用户注册信息
         /// </summary>
+        [HttpPost]
         public int Register(UserTable _userTable)
         {
             var ustb = ObjectMapper.Map<UserTable>(_userTable);
             int id = _repository.InsertAndGetId(ustb);
             return id;
         }
-        [HttpPost]
         /// <summary>
         /// 查询信息 登录
         /// </summary>
         /// <param name="userid">用户名</param>
         /// <param name="pwd">用户密码</param>
         /// <returns></returns>
+        [HttpPost]
         public async Task<ListResultDto<UserTable>> Login(string Num, string pwd)
         {
             var usertable = await _repository
@@ -51,13 +54,13 @@ namespace GsfCoffee.Coffee
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
-        [HttpGet]
         /// <summary>
         /// 修改之前的获取数据
         /// </summary>
         /// <param name="Num"></param>
         /// <param name="pwd"></param>
         /// <returns></returns>
+        [HttpGet]
         public async Task<ListResultDto<UserTable>> UpdateLogin(string Num)
         {
             var usertable = await _repository
@@ -66,12 +69,12 @@ namespace GsfCoffee.Coffee
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable));
         }
-        [HttpGet]
         /// <summary>
         /// 用id取编码Numbering
         /// </summary>
         /// <param name="id">id</param>
         /// <returns></returns>
+        [HttpGet]
         public async Task<int?> GetByid(int id)
         {
             var usertable = await _repository
@@ -80,7 +83,6 @@ namespace GsfCoffee.Coffee
                 .ToListAsync();
             return new ListResultDto<UserTable>(ObjectMapper.Map<List<UserTable>>(usertable)).Items[0].Numbering;
         }
-        [HttpPost]
         /// <summary>
         /// 查询所有的信息 
         /// 是否是vip 默认为是 
@@ -89,6 +91,7 @@ namespace GsfCoffee.Coffee
         /// <param name="Delivery">是否是vip 默认为是</param>
         /// <param name="Deprecated">是否弃用 默认是否</param>
         /// <returns></returns>
+        [HttpPost]
         public async Task<ListResultDto<UserTable>> GetAllasync(bool Delivery = true, bool Deprecated = false) {
             var usertable = await _repository
                 .GetAll()
@@ -123,7 +126,7 @@ namespace GsfCoffee.Coffee
             return ("success");
         }
         /// <summary>
-        /// 删除此用户
+        /// 删除此用户（根据id）
         /// </summary>
         /// <param name="id"></param>
         [HttpGet]

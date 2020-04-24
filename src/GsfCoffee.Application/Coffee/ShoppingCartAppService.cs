@@ -19,11 +19,17 @@ namespace GsfCoffee.Coffee
     public class ShoppingCartAppService : GsfCoffeeAppServiceBase, IShoppingCartAppService
     {
         /// <summary>
-        /// 接口注入
+        /// 接口注入 依赖注入
         /// </summary>
         private readonly IRepository<ShoppingCartTable> _repositoryShop;    //购物车表
         private readonly IRepository<CommodityTable> _repositoryComm;       //商品表
         private readonly IRepository<UserTable> _repositoryUser;            //用户表
+        /// <summary>
+        /// 注入
+        /// </summary>
+        /// <param name="repositoryShop">购物车</param>
+        /// <param name="repositoryComm">商品</param>
+        /// <param name="repositoryUser">用户</param>
         public ShoppingCartAppService(IRepository<ShoppingCartTable> repositoryShop,
             IRepository<CommodityTable> repositoryComm,
             IRepository<UserTable> repositoryUser)
@@ -35,7 +41,7 @@ namespace GsfCoffee.Coffee
         /// <summary>
         /// GetShoppingByuserId 获取当前用户下的所有购物车内容
         /// </summary>
-        /// <param name="UserId">用户的Id</param>
+        /// <param name="_UserId">用户的Id</param>
         /// <returns></returns>
         [HttpGet]
         public async Task<ListResultDto<ShoppingCartTable>> GetShoppingByUserId(int _UserId) {
@@ -47,8 +53,7 @@ namespace GsfCoffee.Coffee
         /// <summary>
         /// 创建OR修改购物车商品的数量
         /// </summary>
-        /// <param name="Qty"></param>
-        /// <param name="Id"></param>
+        /// <param name="_shoppingCartTable">购物车表</param>
         [HttpPost]
         public  void UpdateShoppingQty(ShoppingCartTable _shoppingCartTable) {
             try {

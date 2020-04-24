@@ -21,7 +21,7 @@ using GsfCoffee.MultiTenancy;
 namespace GsfCoffee.Controllers
 {
     [Route("api/[controller]/[action]")]
-    class TokenAuthController : GsfCoffeeControllerBase
+    public class TokenAuthController : GsfCoffeeControllerBase
     {
         private readonly LogInManager _logInManager;
         private readonly ITenantCache _tenantCache;
