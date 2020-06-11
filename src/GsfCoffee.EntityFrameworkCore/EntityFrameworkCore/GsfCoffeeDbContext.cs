@@ -5,7 +5,7 @@ using GsfCoffee.Authorization.Users;
 using GsfCoffee.MultiTenancy;
 using GsfCoffee.CoffeeUser;
 using GsfCoffee.OrderTable;
-
+using GsfCoffee.ImportOut;
 namespace GsfCoffee.EntityFrameworkCore
 {
     public class GsfCoffeeDbContext : AbpZeroDbContext<Tenant, Role, User, GsfCoffeeDbContext>
@@ -45,5 +45,9 @@ namespace GsfCoffee.EntityFrameworkCore
         /// 商品类别表
         /// </summary>
         public DbSet<ProductSpecificationsTable> ProductSpecificationsTable { get; set; }
+        /// <summary>
+        /// 导入计划表
+        /// </summary>
+        public DbSet<ImportPlan> ImportPlans { get; set; }
     }
 }
