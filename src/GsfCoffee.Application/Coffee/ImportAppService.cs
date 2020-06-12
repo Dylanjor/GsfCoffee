@@ -9,6 +9,9 @@ using System.Web.Http;
 
 namespace GsfCoffee.Coffee
 {
+    /// <summary>
+    /// 导入导出
+    /// </summary>
     public class ImportAppService : GsfCoffeeAppServiceBase, IImportAppService
     {
         private readonly IRepository<ImportPlan> _repository;

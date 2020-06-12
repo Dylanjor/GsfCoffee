@@ -6,6 +6,8 @@ using GsfCoffee.MultiTenancy;
 using GsfCoffee.CoffeeUser;
 using GsfCoffee.OrderTable;
 using GsfCoffee.ImportOut;
+using GsfCoffee.ForME;
+
 namespace GsfCoffee.EntityFrameworkCore
 {
     public class GsfCoffeeDbContext : AbpZeroDbContext<Tenant, Role, User, GsfCoffeeDbContext>
@@ -49,5 +51,17 @@ namespace GsfCoffee.EntityFrameworkCore
         /// 导入计划表
         /// </summary>
         public DbSet<ImportPlan> ImportPlans { get; set; }
+        /// <summary>
+        /// 日记内容
+        /// </summary>
+        public DbSet<DiaryContent> DiaryContent { get; set; }
+        /// <summary>
+        /// 日记类别
+        /// </summary>
+        public DbSet<DiaryType> DiaryType { get; set; }
+        /// <summary>
+        /// 日记评论
+        /// </summary>
+        public DbSet<DiaryComment> DiaryComment { get; set; }
     }
 }
