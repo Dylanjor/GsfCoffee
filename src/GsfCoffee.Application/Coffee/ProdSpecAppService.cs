@@ -86,5 +86,6 @@ namespace GsfCoffee.Coffee
                 .ToListAsync();
             return new ListResultDto<ProductSpecificationsTable>(ObjectMapper.Map<List<ProductSpecificationsTable>>(ProdSpec));
         }
+
     }
 }

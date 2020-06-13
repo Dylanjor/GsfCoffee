@@ -12,6 +12,10 @@ namespace GsfCoffee.ForME
         /// </summary>
         public string Person { get; set; }
         /// <summary>
+        /// 日记ID
+        /// </summary>
+        public int ContentId { get; set; }
+        /// <summary>
         /// 评论内容
         /// </summary>
         public string Diarycomment { get; set; }

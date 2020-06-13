@@ -38,5 +38,9 @@ namespace GsfCoffee.ForME
         /// 提交日期时间
         /// </summary>
         public DateTime DateTime { get; set; }
+        /// <summary>
+        /// 标题
+        /// </summary>
+        public string Title { get; set; }
     }
 }
