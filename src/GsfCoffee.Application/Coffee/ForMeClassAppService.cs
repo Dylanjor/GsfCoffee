@@ -69,8 +69,10 @@ namespace GsfCoffee.Coffee
         [HttpGet]
         public async Task<ListResultDto<DiaryContent>> GetDiaryByTypeId(int Type)
         {
+
             var DiaryContent = await _repositoryContent.GetAll()
                             .Where(c=>c.DiaryType == Type)
+                            .OrderByDescending(c=>c.DateTime)
                             .ToListAsync();
             return new ListResultDto<DiaryContent>(ObjectMapper.Map<List<DiaryContent>>(DiaryContent));
         }
