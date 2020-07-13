@@ -22,7 +22,7 @@ namespace GsfCoffee.OrderTable
         /// <summary>
         /// 商品图片 
         /// </summary>
-        public string CommImage { get; set; }
+        //public string CommImage { get; set; }
         /// <summary>
         /// 商品类型
         /// </summary>
